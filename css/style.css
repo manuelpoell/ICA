@@ -1,0 +1,19 @@
+body {
+    background-color: ghostwhite;
+    font-family: arial;
+	margin: 0px auto;
+	padding: 10px 10px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+footer {
+    text-align: center;
+}
+.chart-container {
+	margin: auto;
+    width: 85%;
+	height: auto;
+}
