@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$.ajax({
-		url : "./data.php", 
+		url : "../Potdata.php",
 		type : "GET",
 		success : function(data){
 			console.log(data);
@@ -30,7 +30,22 @@ $(document).ready(function(){
 			};
 
 			var ctx = $("#mycanvas");
+			//var ctx = document.getElementById("mycanvas").getContext("2d");
 
+//			var myChart = new Chart(ctx).Scatter({
+//            data: chartdata,
+//            options: {
+//                responsive: true,
+//                hoverMode: 'single',
+//                scales: {
+//                    xAxes: [{
+//                        gridLines: {
+//                            zeroLineColor: "rgba(0,0,0,1)"
+//                        }
+//                    }]
+//                }
+//            }
+//    });
 			var LineGraph = new Chart(ctx, {
 				type: 'line',
 				data: chartdata
